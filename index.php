@@ -41,5 +41,35 @@ if($age >= 30) {
 
 ?>
 
+<?php
+// 配列の出し方
+$colors = array("赤", "青", "黄");
+    echo $colors[0];
+    $colors[] = "白";
+    echo $colors[3];
+?>
+
+<?php
+// switch文
+  $num = 77;
+  $remainder = $num % 3;
+
+  switch($remainder) {
+    case 0:
+      echo "大吉です。";
+      break;
+    case 1:
+      echo "中吉です。";
+      break;
+    case 2:
+      echo "小吉です。";
+      break;
+    default:
+      echo "凶です。";
+      break;
+  }
+  // 結果 "小吉です。"
+?>
+
   </body>
 </html>
