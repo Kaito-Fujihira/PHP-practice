@@ -85,6 +85,27 @@ $colors = array("赤", "青", "黄");
     echo $i."<br>"; // .<br>を入れることで改行する
   }
 
+  // while文
+  $i = 2;
+  while($i <= 100) {
+    echo $i."<br>";
+    $i += 2;
+  }
+
+  // breakとcontinue
+  for($i = 1; $i <= 1000; $i++) {
+    if($i > 500) {
+      break; // 501以上の数字を表示しないようにbreak文
+    }
+    echo $i."<br>";
+  }
+  for($i = 1; $i <= 1000; $i++) {
+    if($i % 3 == 0) {
+      continue; // 3の倍数の場合はechoせずにcontinueを用いて次の数字に進む
+    }
+    echo $i."<br>";
+  }
+
 ?>
 
   </body>
