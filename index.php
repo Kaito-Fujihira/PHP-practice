@@ -106,6 +106,14 @@ $colors = array("赤", "青", "黄");
     echo $i."<br>";
   }
 
+  // foreach文
+  $scores = array('数学' => 70, '英語' => 90, '国語' => 80);
+
+  foreach($scores as $key => $value) {
+    echo $key."は".$value."点です。"; // 「キー変数」の部分は省略可能
+  }
+  // 結果 数学は70点です。英語は90点です。国語は80点です。
+
 ?>
 
   </body>
