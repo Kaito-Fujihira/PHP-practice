@@ -128,7 +128,34 @@ $colors = array("赤", "青", "黄");
   echo '<br>';
     
   echo rand(10,15); // ランダムな整数を返す
+
+  // 関数を自作する
+  function hello() {
+    echo "Hello, world!";
+  }
+    
+  hello(); // 結果 Hello, world!
+
+  echo '<br>';
+
+  function printRectangleArea($height, $width) {
+    echo $height * $width;
+  }
+    
+  printRectangleArea(5, 10); // $height(5) * $width(10)で50になる
+
+  // 戻り値
+  function getCircleArea($radius) {
+    return $radius * $radius * 3;
+  }
+  
+  $circleArea = getCircleArea(5);
+  
+  echo $circleArea
+
 ?>
+
+
 
   </body>
 </html>
