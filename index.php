@@ -114,6 +114,20 @@ $colors = array("赤", "青", "黄");
   }
   // 結果 数学は70点です。英語は90点です。国語は80点です。
 
+  // 関数
+  $str = 'progate';
+
+  echo strlen($str); // 文字列の文字数を返す組み込み関数
+    
+  echo '<br>';
+    
+  $array = array('HTML', 'CSS', 'PHP');
+
+  echo count($array); // 配列の要素の数を返す
+    
+  echo '<br>';
+    
+  echo rand(10,15); // ランダムな整数を返す
 ?>
 
   </body>
