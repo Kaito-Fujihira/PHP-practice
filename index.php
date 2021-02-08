@@ -155,6 +155,15 @@ $colors = array("赤", "青", "黄");
 
 ?>
 
+<!-- formタグ -->
+<form method="post" action="sent.php">
+  <div class="form-item">名前</div>
+  <input type="text" name="name">
+  <div class="form-item">年齢</div>
+  <div class="form-item">内容</div>
+  <textarea name="body"></textarea>
+  <input type="submit" value="送信">
+</form>
 
 
   </body>
