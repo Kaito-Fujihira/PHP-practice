@@ -15,6 +15,7 @@
           <img src="<?php echo $menu->image ?>" class="menu-item-image">
           <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
           <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
+          <p>注文数: <?php echo $menu->getOrderCount(); ?></p>
         </div>
       <?php endforeach ?>
     </div>
