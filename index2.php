@@ -9,16 +9,19 @@
 <body>
   <div class="menu-wrapper container">
     <h1 class="logo">Café Progate</h1>
-    <div class="menu-items">
-      <?php foreach($menus as $menu): ?>
-        <div class="menu-item">
-          <img src="<?php echo $menu->image ?>" class="menu-item-image">
-          <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
-          <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
-          <p>注文数: <?php echo $menu->getOrderCount(); ?></p>
-        </div>
-      <?php endforeach ?>
-    </div>
+    <form method="post" action="confirm.php">
+      <div class="menu-items">
+        <?php foreach($menus as $menu): ?>
+          <div class="menu-item">
+            <img src="<?php echo $menu->image ?>" class="menu-item-image">
+            <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
+            <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
+            <input type="text" value="0" name="<?php echo $menu->getName() ?>">
+          </div>
+        <?php endforeach ?>
+      </div>
+      <input type="submit" value="注文する">
+    </form>
   </div>
 </body>
 </html>
