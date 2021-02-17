@@ -21,6 +21,7 @@ require_once("menu.php");
           <div class="menu-item">
             <img src="<?php echo $menu->image ?>" class="menu-item-image">
             <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
+            <p class="menu-item-type"><?php echo $menu->getType() ?></p>
             <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
             <input type="text" value="0" name="<?php echo $menu->getName() ?>">
           </div>
