@@ -23,6 +23,8 @@ require_once("menu.php");
             <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
             <?php if ($menu instanceof Drink): ?>
               <p class="menu-item-type"><?php echo $menu->getType() ?></p>
+            <?php else: ?>
+              <p>辛さ: <?php echo $menu->getSpiciness() ?></p>
             <?php endif ?>
             <p class="menu-item-type"><?php echo $menu->getType() ?></p>
             <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
