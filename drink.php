@@ -6,10 +6,7 @@ class Drink extends Menu {
   private $type;
 
   public function __construct($name, $price, $image, $type) {
-    $this->name = $name;
-    $this->price = $price;
-    $this->image = $image;
-    self::$count++;
+    parent::__construct($name, $price, $image); # 親クラスコンストラクタの呼び出し
     $this->type = $type;
   }
 
