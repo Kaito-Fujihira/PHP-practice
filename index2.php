@@ -24,7 +24,9 @@ require_once("menu.php");
             <?php if ($menu instanceof Drink): ?>
               <p class="menu-item-type"><?php echo $menu->getType() ?></p>
             <?php else: ?>
-              <p>辛さ: <?php echo $menu->getSpiciness() ?></p>
+              <?php for($i = 0; $i < $menu->getSpiciness(); $i++): ?>
+                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/chilli.png" class="icon-spiciness">
+              <?php endfor ?>
             <?php endif ?>
             <p class="menu-item-type"><?php echo $menu->getType() ?></p>
             <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
