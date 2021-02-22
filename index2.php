@@ -20,7 +20,9 @@ require_once("menu.php");
         <?php foreach($menus as $menu): ?>
           <div class="menu-item">
             <img src="<?php echo $menu->image ?>" class="menu-item-image">
-            <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
+            <h3 class="menu-item-name">
+              <a href="show.php"><?php echo $menu->name ?></a>
+            </h3>
             <?php if ($menu instanceof Drink): ?>
               <p class="menu-item-type"><?php echo $menu->getType() ?></p>
             <?php else: ?>
