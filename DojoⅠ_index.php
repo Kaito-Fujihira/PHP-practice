@@ -64,3 +64,15 @@ echo "合計金額は".$totalPrice."円です";
 // lesson7 "max"
 echo "最高価格は".max($prices)."円です";
 ?>
+
+
+<!-- lesson8 -->
+<?php
+$menu = array("name" => "CURRY", "price" => 900);
+echo "$menuの値: ";
+var_export($menu); // var_exportは変数の中身を見るための関数
+echo "<br>"
+echo "-----";
+echo "<br>"
+echo $menu["name"]."は".$menu["price"]."円です";
+?>
