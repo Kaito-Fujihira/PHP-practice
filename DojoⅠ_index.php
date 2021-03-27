@@ -60,4 +60,7 @@ foreach ($prices as $price) {
   $totalPrice += $price; // 各金額を$totalPriceに足していく
 }
 echo "合計金額は".$totalPrice."円です";
+
+// lesson7 "max"
+echo "最高価格は".max($prices)."円です";
 ?>
