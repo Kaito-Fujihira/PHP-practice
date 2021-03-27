@@ -53,4 +53,10 @@ echo "<br>"
 
 echo "合計金額は".array_sum($prices)."円です";
 
+// 他のやり方
+$totalPrice = 0; // 金額の合計値を入れるための変数
+foreach ($prices as $price) {
+  $totalPrice += $price; // 各金額を$totalPriceに足していく
+}
+echo "合計金額は".$totalPrice."円です";
 ?>
