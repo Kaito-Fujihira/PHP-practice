@@ -1,3 +1,4 @@
+<!-- lesson1~4 -->
 <?php
 $money = 2000;
 $price = 1000;
