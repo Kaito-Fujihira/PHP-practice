@@ -21,3 +21,36 @@ if ($taxPrice < $money) {
 }
 
 ?>
+
+
+<!-- lesson5 -->
+<?php
+for ($i = 1; $i <= 100; $i++) {
+  if ($i % 3 == 0 && $i % 5 == 0) {
+    echo "FizzBuzz";
+  }elseif ($i % 3 == 0) {
+    echo "Fizz";
+  }elseif ($i % 5 == 0) {
+    echo "Buzz";
+  }else{
+    echo $i;
+  }
+  echo "<br>"
+}
+?>
+
+
+<!-- lesson6 -->
+<?php
+$prices = array(1000, 650, 750, 800);
+echo "$pricesの値: ";
+foreach ($prices as $price) {
+  echo $price." ";
+}
+echo "<br>";
+echo "-----";
+echo "<br>"
+
+echo "合計金額は".array_sum($prices)."円です";
+
+?>
