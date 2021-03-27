@@ -12,9 +12,9 @@ echo "-----";
 echo "<br>";
 
 $taxPrice = $price + $price * $taxRate;
-if ($money == $taxPrice) {
+if ($taxPrice < $money) {
   echo "商品を買うことができます";
-} else if ($money == $taxPrice){
+} else if ($taxPrice == $money){
   echo "商品を買うことができますが、所持金がなくなります";
 } else {
   echo "商品を買うことができません";
