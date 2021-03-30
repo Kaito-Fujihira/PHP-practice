@@ -119,14 +119,17 @@ $menus = array(
 );
 
 $totalPrice = 0;
-$maxPrice = 0;
-$maxPriceName = "";
+$maxPrice = 0; // 最高価格を入れるための変数
+$maxPriceName = ""; // 最高価格のものの名前を入れるための変数
 foreach ($menus as $menu) {
   echo $menu["name"]."は".$menu["price"]."円です";
   echo "<br>"
   $totalPrice += $menu["price"];
+  // $maxPriceに入っている価格より大きければ
   if ($maxPrice < $$menu["price"]) {
+    // その価格で$maxPrice上書きする
     $maxPrice = $menu["price"];
+    // 最高価格のものの名前で上書きする
     $maxPriceName = $menu["name"]
   }
 }
